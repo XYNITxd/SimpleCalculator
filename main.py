@@ -29,7 +29,10 @@ elif op == "/":
     except ZeroDivisionError:
         print("You can't divide by zero!")
 elif op == "%":
-    print(num1 % num2)
+    try:
+        print(num1 % num2)
+    except ZeroDivisionError:
+        print("You can't divide by zero!")
 elif op == "**":
     print(num1 ** num2)
 elif op == "//":
